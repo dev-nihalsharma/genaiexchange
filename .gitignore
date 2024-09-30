@@ -1,1 +1,6 @@
 venv/
+
+# Client - NextJS
+/client/.env
+/client/.idea
+/client/.idea/*
