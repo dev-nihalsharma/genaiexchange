@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52.78 44.3">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#linear-gradient-2);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        stroke: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="3.5" x2="52.78" y2="3.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#87ffaf"/>
+      <stop offset="1" stop-color="#7abdff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="22.15" y2="22.15" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" y1="40.8" y2="40.8" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <line class="cls-3" x1="3.5" y1="3.5" x2="49.28" y2="3.5"/>
+    <line class="cls-1" x1="3.5" y1="22.15" x2="49.28" y2="22.15"/>
+    <line class="cls-2" x1="3.5" y1="40.8" x2="49.28" y2="40.8"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    height: 100vh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 450px;
+    padding: 40px;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(35, 35, 35, 0.69);
+    background: rgba(25, 25, 25, 0.76);
+    box-shadow: 0 20px 40px rgba(16, 16, 16, 0.76);
+    backdrop-filter: blur(25px);
+}
+
+.loginFail {
+    color: #fb8d8d;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(255, 168, 168, 0.22);
+}

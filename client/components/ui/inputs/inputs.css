@@ -1,0 +1,30 @@
+:root {
+    --bgColor: rgba(16, 16, 16, 0.53);
+    --textColor: white;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.inputContainer input {
+    background: var(--bgColor);
+    padding: 10px;
+    color: var(--textColor);
+    border: none;
+    border-radius: 7px;
+    outline: 0 solid rgba(66, 66, 66, 0.5);
+    transition: all 0.1s ease-in;
+    width: 100%;
+}
+
+.inputContainer input:focus {
+    outline: 2px solid rgb(89, 248, 161);
+}
+
+.inputContainer label {
+    color: #bfbfbf;
+    font-weight: lighter;
+    width: fit-content;
+}

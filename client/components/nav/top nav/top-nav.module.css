@@ -1,0 +1,118 @@
+.topNav {
+    height: 100%;
+    width: 100vw;
+    display: block;
+    flex-direction: row;
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    .menuContainer {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        margin-right: 10px;
+        height: 100%;
+        gap: 10px;
+        .switcher {
+            overflow: hidden;
+            width: 43px;
+            height: 43px;
+            position: relative;
+            border: 1px solid #2b2b2b;
+            border-radius: 12px;
+            background-color: #171717;
+            transition: all 0.2s ease;
+            .iconMenu {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-user-select: none;
+                transition: all 0.3s ease;
+            }
+            .crossMenu {
+                position: absolute;
+                top: 50%;
+                left: -200%;
+                transform: translate(0%, -50%);
+                transition: all 0.3s ease;
+            }
+        }
+        .switcher:hover {
+            background-color: #1e1e1e;
+            cursor: pointer;
+        }
+        .switcher:active {
+            background-color: #191919;
+            scale: 0.97;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .switcher.menuActive {
+            .iconMenu {
+                position: absolute;
+                top: 50%;
+                left: 200%;
+                transform: translate(0%, -50%);
+            }
+            .crossMenu {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        height: 100%;
+        gap: 10px;
+        .icon {
+            border: 1px solid #2b2b2b;
+            border-radius: 12px;
+        }
+    }
+    .logOutContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        float: right;
+        .logOut {
+            border: none;
+            border-radius: 8px;
+            background-color: #191919;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            outline: 0 solid rgba(55, 55, 55, 0.76);
+            transition: all 0.2s ease;
+        }
+        .logOut:hover {
+            background-color: #3c3c3c;
+            outline: 3px solid rgba(55, 55, 55, 0.76);
+        }
+        .logOut:active {
+            scale: 0.99;
+            opacity: 0.8;
+            background-color: #323232;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topNav {
+        .menuContainer {
+            display: flex;
+        }
+    }
+}

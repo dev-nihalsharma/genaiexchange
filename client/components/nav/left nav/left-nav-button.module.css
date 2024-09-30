@@ -1,0 +1,45 @@
+.link {
+    background: #1e1e1e;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    outline: 0 solid rgba(143, 143, 143, 0.37);
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-radius: 8px;
+        background-image: var(--primary-button-gradient);
+        background-repeat: no-repeat;
+        background-position-y: 40px;
+        background-color: rgba(71, 71, 71, 0.51);
+        transition: all 0.2s ease;
+    }
+}
+
+.link:hover {
+    outline: 3px solid rgba(143, 143, 143, 0.37);
+}
+
+.link:active {
+    scale: 0.98;
+    opacity: 0.9;
+    background: rgba(23, 23, 23, 0.82);
+}
+
+.link.active {
+    background: #292929;
+    outline: 3px solid rgba(122, 122, 122, 0.37);
+
+    .imageContainer {
+        color: black;
+        background-position-y: 0;
+    }
+}
+

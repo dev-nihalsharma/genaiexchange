@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    font-weight: 800;
+    color: black;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    border: none;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: rgba(48, 48, 48, 0.68);
+    background-image: var(--primary-button-gradient);
+    background-repeat: no-repeat;
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    outline: 0 solid rgba(174, 174, 174, 0.45);
+}
+
+.button:hover {
+    color: white;
+    background-position-y: 200px;
+    outline: 3px solid rgba(204, 204, 204, 0.37);
+    cursor: pointer;
+}
+
+.button:active {
+    color: white;
+    background-position-y: 200px;
+    outline: 3px solid rgba(143, 143, 143, 0.37);
+    background-color: rgba(37, 37, 37, 0.68);
+}

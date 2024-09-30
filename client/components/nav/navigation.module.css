@@ -1,0 +1,66 @@
+.leftNav {
+    display: flex;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 80px);
+    width: 300px;
+    background-color: rgba(18, 18, 18, 0.75);
+    z-index: 20000;
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(48, 48, 48, 0.75);
+    transition: all 0.3s ease;
+}
+
+.topNav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.75);
+    z-index: 20000;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(48, 48, 48, 0.75);
+}
+
+@media screen and (max-width: 900px) {
+    .leftNav {
+        left: -600px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.78);
+    }
+    .bg {
+        position: absolute;
+        top: 0;
+        left: -400px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(39, 39, 39, 0.86);
+        content: "";
+        z-index: -1;
+        transition: all .5s ease;
+    }
+    .menuOpen {
+        transition: all .5s ease;
+    }
+
+    .leftNav.menuOpen {
+        left: 0;
+
+    }
+    .leftNav.menuOpen>.bg {
+        left: 0;
+        transition: all .3s ease;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .leftNav {
+        width: 100vw;
+        box-shadow: none;
+    }
+    .bg {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.leftNav {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: fit-content;
+    gap: 20px;
+}
