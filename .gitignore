@@ -1,5 +1,8 @@
 venv/
 
+# JetBrains IDE
+/.idea
+
 # Client - NextJS
 /client/.env
 /client/.idea
