@@ -1,0 +1,42 @@
+@keyframes loader {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    .loader {
+        width: 100px;
+        height: 10px;
+        overflow: hidden;
+    }
+    .loader::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 10px;
+        background: var(--primary-button-gradient);
+        border-radius: 10px;
+        animation: loader 1s infinite cubic-bezier(0.87, 0, 0.13, 1);
+    }
+    .loadingText {
+        color: #bababa;
+        font-size: 14px;
+        margin-top: 10px;
+
+    }
+
+}

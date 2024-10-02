@@ -34,8 +34,6 @@ const adminRegister = async (req, res) => {
         const token = jwt.sign({ id: newAdmin._id }, process.env.JWT_SECRET, { expiresIn: '14d' });
         delete newAdmin.password;
         res.status(200).json({ success: 'Admin registered successfully', token,data:newAdmin });
-
-
     }
     catch(error){
         res.status(500).json({error: 'Internal server error'+error });

@@ -1,0 +1,65 @@
+.dangerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #5e31341f;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #944e521f;
+    overflow-y: scroll;
+    overflow-x: clip;
+    .dangerHeader {
+        .icon {
+            padding: 10px;
+            margin-right: 7px;
+            background-color: rgba(179, 89, 89, 0.3);
+            border-radius: 10px;
+        }
+        color: rgb(255, 94, 94);
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        padding: 10px 0;
+    }
+    .patientContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: 100%;
+        .patient {
+            padding: 15px;
+            display: block;
+            border-radius: 8px;
+            background-color: rgba(61, 32, 32, 0.295);
+            .details {
+                float: left;
+                margin-right: 10px;
+            }
+            .stageCont {
+                float: right;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(96, 50, 53, 0.12);
+                width: 45px;
+                height: 45px;
+                border-radius: 8px;
+                border: 1px solid #944e521f;
+                .stageTxt {
+                    color: #944e52;
+                    font-size: 12px;
+                }
+            }
+        
+        }
+    }
+
+}
+
+.dangerContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.dangerContainer {
+    scrollbar-width: none;  /* Firefox */
+}

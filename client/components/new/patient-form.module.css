@@ -1,0 +1,38 @@
+.form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #191919;
+    .inputsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.failReason {
+    color: #fb8d8d;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(255, 168, 168, 0.22);
+}
+
+@media screen and (max-width: 1270px) {
+    .form {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1065px) {
+    .form {
+        .inputsContainer {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}

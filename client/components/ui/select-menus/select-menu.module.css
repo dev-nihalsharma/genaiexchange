@@ -1,0 +1,104 @@
+.label {
+    color: #bfbfbf;
+    font-weight: lighter;
+    width: fit-content;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputContainer > .mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.selectedOption {
+    background: var(--bgColor);
+    color: var(--textColor);
+    border: none;
+    display: block;
+    font-size: 12px;
+    padding: 0 15px;
+    border-radius: 7px;
+    outline: 0 solid rgba(66, 66, 66, 0.5);
+    transition: all 0.1s ease-in;
+    width: 100%;
+    text-align: left;
+    -webkit-user-select: none;
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-left: 10px;
+        float: right;
+        .icon {
+            width: 25px;
+            height: 25px;
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+
+
+
+.selectedOption:hover {
+    cursor: pointer;
+    background: rgba(44, 44, 44, 0.66);
+}
+
+.selectedOption:active {
+    background: rgba(23, 23, 23, 0.66);
+    .imageContainer {
+        .icon {
+            transform: translateY(4px);
+        }
+    }
+}
+
+
+.selectedOption.open{
+    outline: 2px solid rgb(89, 248, 161);
+
+    .imageContainer {
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
+}
+.optionList {
+    position: absolute;
+    top: 35px;
+    border-radius: 12px;
+    left: 0;
+    z-index: 200;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: rgba(23, 23, 23, 0.58);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(58, 58, 58, 0.34);
+    max-height: 40vh;
+    overflow-y: scroll;
+    box-shadow: 0px 10px 20px rgba(24, 24, 24, 0.61);
+    .option {
+        color: white;
+        padding: 8px 10px;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+    }
+    .option:hover {
+        cursor: pointer;
+        background-color: rgba(59, 59, 59, 0.58);
+    }
+    .option:active {
+        cursor: pointer;
+        background-color: rgba(37, 37, 37, 0.58);
+    }
+}

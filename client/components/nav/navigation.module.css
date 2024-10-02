@@ -36,7 +36,7 @@
         left: -400px;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(39, 39, 39, 0.86);
+        background-color: rgba(16, 16, 16, 0.86);
         content: "";
         z-index: -1;
         transition: all .5s ease;

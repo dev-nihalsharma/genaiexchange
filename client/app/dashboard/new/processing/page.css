@@ -1,0 +1,10 @@
+.processingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

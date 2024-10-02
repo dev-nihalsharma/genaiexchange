@@ -1,0 +1,38 @@
+.patientContainer {
+    display: block;
+    padding: 20px;
+    border: 1px solid #4c4c4c;
+    border-radius: 10px;
+    background-color: rgba(46, 46, 46, 0.64);
+    width: 100%;
+    .left {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        .name {
+            font-size: 28px;
+        }
+        .category {
+            font-size: 18px;
+            color: #bababa;
+        }
+    }
+    .right {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        width: 52px;
+        height: 52px;
+        color: #bfbfbf;
+        border-radius: 5px;
+        background-color: #303030;
+        .age {
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+}

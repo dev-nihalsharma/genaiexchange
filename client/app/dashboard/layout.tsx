@@ -22,9 +22,6 @@ export default async function DashboardLayout({ children }: {
     }}>
         <Navigation />
         <div className={styles.mainContent}>
-            <h1>
-                Logged in as: {user[0].username}
-            </h1>
             {children}
         </div>
     </div>

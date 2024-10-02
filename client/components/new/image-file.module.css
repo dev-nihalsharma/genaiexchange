@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .button {
+        padding: 9px 12px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        outline: 0 solid rgba(66, 66, 66, 0.5);
+        background: #222222;
+        transition: 0.2s ease all;
+    }
+    .button:hover {
+        cursor: pointer;
+        outline: 2px solid rgb(89, 248, 161);
+        background: #333333;
+    }
+    .button:active {
+        background: #0c0c0c;
+    }
+    .fileName {
+        line-height: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+}

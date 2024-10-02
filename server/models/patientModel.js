@@ -31,8 +31,8 @@ const patientSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    stage:{
-        type: Number,
+    category:{
+        type: String,
     },
     diagnosis_date:{
         type: Date,
@@ -40,7 +40,7 @@ const patientSchema = new mongoose.Schema({
     },
     treatment_plan:{
         type: String,
-        required: true
+        required: false
     },
 });
 module.exports = mongoose.model('Patient', patientSchema);

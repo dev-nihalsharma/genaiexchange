@@ -1,9 +1,12 @@
 const Patient = require('../models/patientModel');
-const predictCancer = require('../utils/cancerPredicton');
+const {predictCancer} = require('../utils/cancerPredicton');
 const addPatient = async (req, res) => {
     try{
-        const {name,age,dob,gender,phone,email}=req.body;
-        const {cancer_type,stage,diagnosis_date,treatment_plan}=predictCancer(req.file.path);
+        const {name,age,dob,gender,phone,email,cancer_type}=req.body;
+        const {category,diagnosis_date}={
+            category: predictCancer(cancer_type),
+            diagnosis_date: new Date()
+        }
         const patient = new Patient({
             name,
             age,
@@ -12,14 +15,14 @@ const addPatient = async (req, res) => {
             phone,
             email,
             cancer_type,
-            stage,
-            diagnosis_date,
-            treatment_plan
+            category,
+            diagnosis_date
         });
         await patient.save();
         res.status(200).json({success: 'Patient added successfully', data: patient});
     }
     catch(error){
+        console.error(error);
         res.status(500).json({error: 'Internal server error'+error });
 
     }

@@ -7,4 +7,55 @@
     padding: 20px;
     height: fit-content;
     gap: 20px;
+    .newPtLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: var(--textColor);
+        font-size: 14px;
+        font-weight: 500;
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            padding: 3px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            background-repeat: no-repeat;
+            background-image: var(--primary-button-gradient);
+            transition: all 0.3s ease;
+        }
+        .span {
+            padding: 3px 8px;
+            border-radius: 5px;
+            margin-right: 5px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position-y: -100px;
+            background-image: linear-gradient(90deg, #ffffff, #ffffff);
+            transition: all 0.3s ease;
+        }
+    }
+    .newPtLink:hover {
+        .icon {
+            color: white;
+            background-position-y: 200px;
+            scale: 1.1;
+        }
+        .span {
+            background-position-y: 0px;
+            color: black;
+        }
+    }
+    .newPtLink:active {
+        .icon {
+            scale: 0.9;
+        }
+        .span {
+            background-position-y: 100px;
+            color: white;
+        }
+    }
 }
